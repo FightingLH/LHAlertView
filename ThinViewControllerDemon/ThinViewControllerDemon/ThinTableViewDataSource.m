@@ -48,4 +48,9 @@
     [cell setModel:model];
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ThinModel *model = _dealArray[[indexPath row]];
+    self.cellSelectBlock(model.title);
+}
 @end

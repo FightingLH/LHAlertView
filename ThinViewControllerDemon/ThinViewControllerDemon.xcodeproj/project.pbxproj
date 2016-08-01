@@ -10,6 +10,11 @@
 		EB2586791D4628EE001BDC91 /* ThinHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2586781D4628EE001BDC91 /* ThinHttpManager.m */; };
 		EB409F041D49995E00A70B02 /* ThinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB409F031D49995E00A70B02 /* ThinModel.m */; };
 		EB409F071D49F6A400A70B02 /* ThinTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EB409F061D49F6A400A70B02 /* ThinTableViewDataSource.m */; };
+		EB448E2E1D4F1687001EB9FC /* tingyunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB448E2D1D4F1687001EB9FC /* tingyunApp.framework */; };
+		EB448E301D4F16D5001EB9FC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB448E2F1D4F16D5001EB9FC /* CoreTelephony.framework */; };
+		EB448E321D4F16DE001EB9FC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB448E311D4F16DE001EB9FC /* Security.framework */; };
+		EB448E341D4F16E8001EB9FC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB448E331D4F16E8001EB9FC /* SystemConfiguration.framework */; };
+		EB448E361D4F16F7001EB9FC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB448E351D4F16F7001EB9FC /* libz.tbd */; };
 		EB45F3BA1D46F5AF00A66A4B /* ThinHttpResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB45F3B91D46F5AF00A66A4B /* ThinHttpResponseSerializer.m */; };
 		EB45F3BE1D46F98B00A66A4B /* NSString+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB45F3BD1D46F98B00A66A4B /* NSString+Operation.m */; };
 		EB546A4E1D45F20100BF9697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB546A4D1D45F20100BF9697 /* main.m */; };
@@ -70,6 +75,11 @@
 		EB409F031D49995E00A70B02 /* ThinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinModel.m; sourceTree = "<group>"; };
 		EB409F051D49F6A400A70B02 /* ThinTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinTableViewDataSource.h; sourceTree = "<group>"; };
 		EB409F061D49F6A400A70B02 /* ThinTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinTableViewDataSource.m; sourceTree = "<group>"; };
+		EB448E2D1D4F1687001EB9FC /* tingyunApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tingyunApp.framework; sourceTree = "<group>"; };
+		EB448E2F1D4F16D5001EB9FC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EB448E311D4F16DE001EB9FC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EB448E331D4F16E8001EB9FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EB448E351D4F16F7001EB9FC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		EB45F3B81D46F5AF00A66A4B /* ThinHttpResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinHttpResponseSerializer.h; sourceTree = "<group>"; };
 		EB45F3B91D46F5AF00A66A4B /* ThinHttpResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinHttpResponseSerializer.m; sourceTree = "<group>"; };
 		EB45F3BC1D46F98B00A66A4B /* NSString+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Operation.h"; sourceTree = "<group>"; };
@@ -146,6 +156,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB448E361D4F16F7001EB9FC /* libz.tbd in Frameworks */,
+				EB448E341D4F16E8001EB9FC /* SystemConfiguration.framework in Frameworks */,
+				EB448E321D4F16DE001EB9FC /* Security.framework in Frameworks */,
+				EB448E301D4F16D5001EB9FC /* CoreTelephony.framework in Frameworks */,
+				EB448E2E1D4F1687001EB9FC /* tingyunApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +197,18 @@
 				EB409F031D49995E00A70B02 /* ThinModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EB448E2C1D4F167A001EB9FC /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				EB448E351D4F16F7001EB9FC /* libz.tbd */,
+				EB448E331D4F16E8001EB9FC /* SystemConfiguration.framework */,
+				EB448E311D4F16DE001EB9FC /* Security.framework */,
+				EB448E2F1D4F16D5001EB9FC /* CoreTelephony.framework */,
+				EB448E2D1D4F1687001EB9FC /* tingyunApp.framework */,
+			);
+			name = FrameWork;
 			sourceTree = "<group>";
 		};
 		EB45F3BB1D46F96C00A66A4B /* Category */ = {
@@ -227,6 +254,7 @@
 		EB546A4B1D45F20100BF9697 /* ThinViewControllerDemon */ = {
 			isa = PBXGroup;
 			children = (
+				EB448E2C1D4F167A001EB9FC /* FrameWork */,
 				EBB4A5401D4DF7BD00E2D853 /* View */,
 				EB409F011D49994200A70B02 /* Model */,
 				EB45F3BF1D46FA0800A66A4B /* Request */,
@@ -655,6 +683,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThinViewControllerDemon",
+				);
 				INFOPLIST_FILE = ThinViewControllerDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = feeyo.ThinViewControllerDemon;
@@ -666,6 +698,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThinViewControllerDemon",
+				);
 				INFOPLIST_FILE = ThinViewControllerDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = feeyo.ThinViewControllerDemon;

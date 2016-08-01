@@ -5,7 +5,9 @@
 //  Created by lh on 16/7/25.
 //  Copyright © 2016年 lh. All rights reserved.
 //
-
+/**
+ *添加了一个听云服务做测试使用
+ */
 #import "ViewController.h"
 #import "ThinHttpManager.h"
 #import "ThinModel.h"
@@ -43,7 +45,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"ThinTableViewCell" bundle:nil] forCellReuseIdentifier:@"SearchResultCell"];
     [self.view addSubview:self.tableView];
     self.tableViewDatasource = [[ThinTableViewDataSource alloc]initWithIdentifier:@"SearchResultCell" withItems:self.dataArray withBlock:^(NSString *tips) {
-        tips = @"hello";
+        NSLog(@"%@",tips);
     }];
     
 }
